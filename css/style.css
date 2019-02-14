@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Animáció a navigációhoz */
+html {
+  scroll-behavior: smooth;
+}
+
+.fa-arrow-down {
+  color: rgb(61, 200, 179);
+}
+
+
+
+/* =========== Navigációs menü ==============*/
+#sidebar {
+	position: fixed;
+	width: 12rem;
+	height: 100%;
+	background: hsla(0, 0%, 16%, .95);
+	z-index: 1;
+	left: -12rem;
+	transition: all 300ms linear;
+}
+
+#sidebar.active {
+	left: 0vw;
+}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 13rem;
+	top: 1.8vh;
+	cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.profile-img {
+  text-align: center;
+}
+
+.profile-img img{
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  padding: .5rem;
+  border: 1px solid rgb(61, 200, 179);
+  border-radius: 50%;
+}
+
+#sidebar li {
+  list-style: none;
+}
+
+#sidebar a {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 1rem;
+}
+
+#sidebar li:hover {
+  background-color: black;
+  transition: 200ms;
+}
+
+#sidebar a:hover {
+  color: white;
+}
+
+#sidebar hr {
+  width: 85%;
+  border: 1px solid grey;
+}
+
+
+/* =========== Home kezdete ==============*/
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/home-bg.jpg) no-repeat 70% bottom/cover;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 2rem;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  letter-spacing: .2rem;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: .9rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+/* Név és foglalkozás */
+.name {
+  height: 80%;
+  padding: 10rem 0 0 0;
+}
+
+/* Fektetve kisebb padding szükséges, hogy olvasható maradjon */
+@media (max-width: 812px) and (orientation: landscape) {
+  .name {
+    padding: 5rem 0 0 0;
+  }
+}
+
+/* Nyil lefelé */
+.arrow-down {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  .arrow-down {
+    padding-top: 0;
+  }
+}
+
+.arrow-down a:link, .arrow-down a:visited {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(61, 200, 179);
+}
+
+/* =========== Home vége ==============*/
+
+
+/* =========== Rólam kezdete ==============*/
+.about {
+  padding: 1rem;
+  background-color: rgb(244, 245, 249);
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+.about p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.about a, .work a {
+  display: block;
+  width: 8rem;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(61, 200, 179);
+  background: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .7rem;
+  cursor: pointer;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: black;
+}
+
+.about a:hover, .work a:hover {
+  background-color: rgb(61, 200, 179);
+  color: white;
+  transition: 300ms;
+}
+/* =========== Rólam vége ==============*/
+
+
+/* =========== Tanulmányok kezdete ==============*/
+.studies {
+  padding: 1rem;
+  text-align: center;
+}
+
+.studies h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+.studies p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+}
+
+.studie {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.studie h2 {
+  margin: .5rem;
+}
+
+.place {
+  color: rgb(61, 200, 179);
+}
+/* =========== Tanulmányok vége ==============*/
+
+
+/* =========== Kódolás kezdete ==============*/
+.coding {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(244, 245, 249);
+}
+
+.coding h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+.coding img {
+  height: 80px;
+  background-color: rgb(61, 200, 179);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.coding i {
+  margin-bottom: 1rem;
+}
+
+.lang {
+  margin: .5rem auto 2rem auto;
+  width: 10rem;
+}
+
+.lang h2 {
+  margin: .5rem;
+}
+
+.lang p {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+/* =========== Kódolás vége ==============*/
+
+/* =========== Munkáim kezdete ==============*/
+.works {
+  padding: 1rem;
+  text-align: center;
+}
+
+.works h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+
+.work img:hover {
+  filter: grayscale(0);
+}
+
+.work p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+}
+/* =========== Munkáim vége ==============*/
+
+
+/* =========== Kapcsolat kezdete ==============*/
+.contact {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(244, 245, 249);
+}
+
+.contact h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+.contact-element {
+  background-color: white;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.contact-element hr {
+  width: 20%;
+  border: 1px solid rgb(61, 200, 179);
+}
+
+.contact-element p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-element h2 {
+  margin: 1rem 0;
+}
+
+.contact-element a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Media linkek */
+.link-list {
+  background-color: #403d3d;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: .5rem;
+}
+
+.media-links li {
+  display: inline-block;
+}
+
+.media-links a {
+  color: white;
+}
+/* =========== Kapcsolat vége ==============*/
+
+
+/* =========== Footer kezdete ==============*/
+footer {
+  background-color: #403d3d;
+}
+
+footer p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  padding: 2rem 0;
+  color: wheat;
+}
+/* =========== Footer vége ==============*/
+
+
+
+/* =========== Media query kezdete ==============*/
+@media (min-width: 568px) {
+  .about, .studies, .coding, .works, .contact {
+    padding: 1rem 5rem;
+  }
+
+  .langs li {
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about, .studies, .coding, .works, .contact {
+    padding: 1rem 8rem;
+  }
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  #sidebar img {
+    display: none;
+  }
+
+  #sidebar a {
+    padding: .7rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding: 1rem 4rem;
+  }
+  .contact li {
+    display: inline-block;
+  }
+  .contact-element {
+    width: 17rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .coding, .works, .contact {
+    padding: 1rem 12rem;
+  }
+
+  .about, .studies {
+    padding: 1rem 20rem;
+  }
+
+  .works-container li {
+    display: inline-block;
+    width: 33%;
+  }
+  .work {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+/* =========== Media query vége ==============*/

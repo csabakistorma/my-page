@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Kistorma Csaba - Személyes oldal</title>
+    <link rel="icon" type="image/png" href="img/monogram.png">
+    <meta charset="utf-8">
+    <meta name="author" content="Kistorma csaba">
+    <meta name="description" content="Kistorma Csaba pályakezdő webfejlesztő bemutatkozó oldala. Tanulmányok, Képzések és kurzusok, Programozási ismeretek.">
+    <meta name="keywords" content="Kistorma Csaba, Junior webfejlesztő, Pályakezdő webfejlesztő">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132778767-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132778767-1');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigációs sáv kezdete -->
+      <div id="sidebar">
+        <!-- Menü gomb -->
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="profile-img">
+          <img src="img/profile-img.jpg" alt="Profilkép">
+        </div>
+        <ul>
+          <li><a href="#home">Kezdőlap</a></li>
+          <li><a href="#about">Rólam</a></li>
+          <li><a href="#studies">Tanulmányok</a></li>
+          <li><a href="#coding">Kódolás</a></li>
+          <li><a href="#works">Munkáim</a></li>
+          <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><a href="#home">Lap tetejére</a></li>
+          <li><a href="#contact">Lap aljára</a></li>
+        </ul>
+      </div>
+      <!-- Navigációs sáv vége -->
+
+      <!-- Main kezdete -->
+      <div class="main">
+        <!-- Home kezdete -->
+        <div class="home" id="home">
+          <div class="name">
+          <h1>Kistorma Csaba</h1>
+          <h2>Webfejlesztő</h2>
+          </div>
+          <div class="arrow-down">
+            <a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
+          </div>
+        </div>
+        <!-- Home vége-->
+
+        <!-- Rólam kezdete -->
+        <div class="about" id="about">
+          <h2>Helló!</h2>
+          <i class="fas fa-arrow-down"></i>
+          <p>A nevem Csaba, és pályakezdő webfejlesztő vagyok.
+          Ugyan még nem rendelkezem releváns szakmai tapasztalattal, mindazonáltal szorgalmas és elhivatott vagyok.
+          Hatalmas szenvedéllyel állok a szakma iránt, az ebben való tevékenykedés számomra örömet okoz.
+          Szeretném a már meglévő tudásom elmélyíteni, és szeretnék szakmailag is fejlődni.</p>
+          <a href="cv/Kistorma_Csaba_CV.pdf" download>CV letöltése</a>
+        </div>
+        <!--Rólam vége -->
+
+        <!-- Tanulmányok kezdete -->
+        <div class="studies" id="studies">
+          <h2>Tanulmányok</h2>
+          <i class="fas fa-arrow-down"></i>
+          <!-- CodeBerry kezdete -->
+          <div class="studie">
+            <h2>Webfejlesztő</h2>
+            <h2 class="place">CodeBerry Programozóiskola</h2>
+            <p>Az életemet a webfejlesztés és a tanulás köré rendeztem. Amint véget ér a munka minden időmet arra fordítom, hogy minél többet tudjak haladni és fejlődni ezen a területen. Az iskolában tanultak mellé a CodeBerry által részt vettem egy online webfejlesztő képzésen, ahol részletesen tanulhattam a webfejlesztésről. Alaposabban megismerkedtem a HTML, CSS és JavaScript nyelvekkel, valamint betekintést nyertem a Node.js világába is.</p>
+          </div>
+          <!-- CodeBerry vége -->
+
+          <!-- VTS kezdete -->
+          <div class="studie">
+            <h2>Számítástechnikai mérnök</h2>
+            <h2 class="place">Műszaki Szakfőiskola Szabadka</h2>
+            <p>Itt szereztem BSc diplomám és kezdtem el érdeklődni igazán a programozás iránt. Elsősorban a PHP és MySQL volt amivel jobban megismerkedtem és ezek használatával készítettem el a szakdolgozatomat is. Később pedig ezekből korrepetáltam a hallgatókat a zárthelyi dolgozatokra.</p>
+          </div>
+          <!-- VTS vége -->
+
+          <!-- Középiskola kezdete -->
+          <div class="studie">
+            <h2>Folyamatirányítási elektronikus</h2>
+            <h2 class="place">"Ivan Saric" Műszaki Középiskola Szabadka</h2>
+            <p>Középiskolai éveim alatt még az elektronika felé kacsingattam, azonban itt találkoztam először programozással is. Izgalmas új világ volt, amely rögtön magával ragadott. Ezután világos volt, hogy milyen irányban szeretnék tovább haladni.</p>
+          </div>
+          <!-- Középiskola vége -->
+        </div>
+        <!-- Tanulmányok vége -->
+
+        <!-- Kódolás kezdete -->
+        <div class="coding" id="coding">
+          <h2>Kódolás</h2>
+          <i class="fas fa-arrow-down"></i>
+          <div class="langs">
+            <ul>
+              <li>
+                <!-- HTML5 kezdete -->
+                <div class="lang">
+                  <img src="img/html5-icon.png" alt="HTML5 logó">
+                  <h2>HTML5</h2>
+                  <p>90%</p>
+                </div>
+                <!-- HTML5 vége -->
+              </li>
+              <li>
+                <!-- CSS3 kezdete -->
+                <div class="lang">
+                  <img src="img/css3-icon.png" alt="CSS3 logó">
+                  <h2>CSS3</h2>
+                  <p>90%</p>
+                </div>
+                <!-- CSS3 vége -->
+              </li>
+              <li>
+                <!-- JS kezdete -->
+                <div class="lang">
+                  <img src="img/js-icon.png" alt="JavaScript logó">
+                  <h2>JavaScript</h2>
+                  <p>50%</p>
+                </div>
+                <!-- JS vége -->
+              </li>
+              <li>
+                <!-- PHP kezdete -->
+                <div class="lang">
+                  <img src="img/php-icon.png" alt="PHP logó">
+                  <h2>PHP</h2>
+                  <p>85%</p>
+                </div>
+                <!-- PHP vége -->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Kódolás vége -->
+
+        <!-- Munkáim kezdete -->
+        <div class="works" id="works">
+          <h2>Néhány munkám</h2>
+          <i class="fas fa-arrow-down"></i>
+          <div class="works-container">
+            <ul>
+              <li>
+                <!-- Esküvői oldal kezdete -->
+                <div class="work">
+                  <img src="img/wedding.png" alt="Esküvői oldal">
+                  <p>Reszponzív esküvői weboldal HTMl és CSS használatával.</p>
+                  <a href="https://csabakistorma.github.io/wedding-page/" target="_blank">Megtekintés</a>
+                </div>
+                <!-- Esküvői oldal vége -->
+              </li>
+              <li>
+                <!-- Snapshot template kezdete -->
+                <div class="work">
+                  <img src="img/snapshot.png" alt="Snapshot template">
+                  <p>Reszponzív template oldal HTML, CSS és jQuery használatával.</p>
+                  <a href="https://csabakistorma.github.io/snapshot-website/" target="_blank">Megtekintés</a>
+                </div>
+                <!-- Snapshot template kezdete -->
+              </li>
+              <li>
+                <!-- Nuno template kezdete -->
+                <div class="work">
+                  <img src="img/nuno.png" alt="Nuno template">
+                  <p>Reszponzív template oldal Bootstrap alkalmazásával.</p>
+                  <a href="https://csabakistorma.github.io/responsive-bootstrap-theme/" target="_blank">Megtekintés</a>
+                </div>
+                <!-- Nuno template kezdete -->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Munkáim vége -->
+
+        <!-- Kapcsolat kezdete -->
+        <div class="contact" id="contact">
+          <h2>Kapcsolat</h2>
+          <i class="fas fa-arrow-down"></i>
+          <ul>
+            <li>
+              <div class="contact-element">
+                <h2>Cím</h2>
+                <hr>
+                <p>Törekvés út 55, Kanizsa, Szerbia</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-element">
+                <h2>Telefon</h2>
+                <hr>
+                <p>(+381)64 328 6082</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-element">
+                <h2>E-mail</h2>
+                <hr>
+                <p><a href="mailto:csabakistorma@gmail.com">csabakistorma@gmail.com</a></p>
+              </div>
+            </li>
+          </ul>
+          <div class="media-links">
+            <ul>
+              <li><div class="link-list"><a href="https://www.facebook.com/csabakistorma" target="_blank"><i class="fab fa-facebook-square"></i></a></div></li>
+              <li><div class="link-list"><a href="https://www.instagram.com/csabakistorma" target="_blank"><i class="fab fa-instagram"></i></a></div></li>
+              <li><div class="link-list"><a href="https://www.linkedin.com/in/csabakistorma" target="_blank"><i class="fab fa-linkedin"></i></a></div></li>
+              <li><div class="link-list"><a href="https://github.com/csabakistorma" target="_blank"><i class="fab fa-github"></i></a></div></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Kapcsolat vége -->
+
+        <!-- Footer kezdete -->
+        <footer>
+          <p>Kistorma Csaba &copy; 2019</p>
+        </footer>
+        <!-- Footer vége -->
+      </div>
+      <!-- Main vége-->
+    </div>
+    <!-- Sidebar JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
