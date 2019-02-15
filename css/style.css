@@ -66,7 +66,7 @@ html {
   letter-spacing: .1rem;
   font-weight: 400;
   width: 100%;
-  padding: 1rem;
+  padding: .7rem 1rem;
 }
 
 #sidebar li:hover {
@@ -415,7 +415,7 @@ footer p {
   }
 
   #sidebar a {
-    padding: .7rem 1rem;
+    padding: .5rem 1rem;
   }
 }
 
