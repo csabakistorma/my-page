@@ -148,7 +148,7 @@ html {
 
 /* =========== Rólam kezdete ==============*/
 .about {
-  padding: 1rem;
+  padding: 1rem 3rem;
   background-color: rgb(244, 245, 249);
   text-align: center;
 }
@@ -168,6 +168,7 @@ html {
   letter-spacing: .1rem;
   line-height: 1.5rem;
   margin-top: 1rem;
+  text-align: justify;
 }
 
 .about a, .work a {
@@ -195,7 +196,7 @@ html {
 
 /* =========== Tanulmányok kezdete ==============*/
 .studies {
-  padding: 1rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -213,6 +214,7 @@ html {
   font-size: .8rem;
   letter-spacing: .1rem;
   line-height: 1.5rem;
+  text-align: justify;
 }
 
 .studie {
